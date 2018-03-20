@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.scortech.coursera.form.MainActivity">
+
+    <ScrollView
+
+        android:id="@+id/scrollView1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:hint="Nombre Completo"/>
+
+
+        <TextView
+                android:id="@+id/tvFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Nacimiento"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etNombre"/>
+
+        <DatePicker
+        android:id="@+id/dpFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvFechaNacimiento" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:hint="Telefono"
+        android:layout_below="@+id/dpFechaNacimiento"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:hint="Email"
+        android:layout_below="@+id/etTelefono"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:hint="Descripcion Contacto"
+        android:layout_below="@+id/etEmail"/>
+
+            <Button
+                android:id="@+id/bAceptar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:layout_below="@+id/etDescripcion"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
